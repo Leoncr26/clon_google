@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{font-family: 'Open Sans', sans-serif;
+}
+body html{
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*:before*:after{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin: 0px 6px;
+}
+a:hover{
+    text-decoration: underline;
+}
+body{
+    height: 99vh;
+    width: 99vw; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+header{
+    width: 99%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.menuprincipal{
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.person{
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    border: transparent;
+    padding: 4px;
+    transition: .5s;
+
+}
+.person:hover{
+    background-color: brown;
+}
+
+.apps {
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    border: transparent;
+    padding: 4px;
+    margin-right: 2px;
+   transition: .5s;
+}
+.apps:hover{
+    background-color: lightgray;
+    
+
+}
+.correo{
+    background-color: transparent;
+    transition: .5s;
+}
+.correo:hover{
+    background-color: rgb(161, 171, 183);
+}
+
+.logodegoogle{
+     width: 17rem;
+     height: 9.5rem;
+}
+.busqueda{
+   
+    
+    display: flex;
+    align-items: center;
+    border: solid 1px lightgray;
+    border-radius: 99px;
+    width: 35rem;
+    height: 2.5rem;
+}
+.busqueda input{
+    
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 1px 10px 1px 10px;
+    margin: 1px;
+}
+.lupa{
+    position:relative;
+    left: 10px;
+    top: 4px;
+}
+.microfono{
+    position: relative;
+    right: 10px;
+    top: 4px;
+
+}
+.menu_2{
+    display: flex;
+    margin-top: 25px;
+    gap: 15px;
+}
+.menu_2 button{
+    border: transparent;
+    background-color:#f1f1f1;
+    padding: 19px;
+    border-radius: 15px;
+    
+}
+.footer{
+    background-color: #f1f1f1;
+    width: 99vw;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.links_2{
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-between;
+}
+.links a{
+    padding: 14px;
+    
+}
+.footer h5{
+    font-size: 15px;
+}
+@media (max-width:700px){
+    .menuprincipal{
+       gap: 1px; 
+       transform:scale(.8);
+       position: relative;
+       left: 15px;
+    }
+    .busqueda{
+        width: 85%;
+    }
+    .menu_2{
+        transform:scale(.8);
+        margin-top: 15px;
+    }
+    .footer{
+        transform:scale(.8);
+    }
+}
+
